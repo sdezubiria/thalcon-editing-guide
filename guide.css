@@ -133,6 +133,15 @@ ul, ol { padding: 0; list-style: none; }
 .field .split__l { padding-top: calc(28 * var(--u)); }
 .field .split__r { padding-top: calc(28 * var(--u)); }
 .shot { border: var(--hair) solid var(--line); background: var(--bone); }
+/* Framer screenshots: the editor's own UI, shown at its real size */
+.ui { border: var(--hair) solid var(--line); border-radius: 8px; overflow: hidden; background: var(--paper); }
+.ui img { width: 100%; }
+.uifig { margin: calc(36 * var(--u)) 0 0; }
+.uifig--narrow { max-width: 540px; }
+.uirow { display: grid; grid-template-columns: 260px 260px; gap: 16px; align-items: start; margin-top: calc(40 * var(--u)); }
+.uirow .uifig { margin: 0; }
+.dark .ui { border-color: var(--line-dark); }
+.dark .shot__cap { color: var(--mute); }
 .shot__cap { margin-top: calc(12 * var(--u)); color: var(--grey); }
 
 /* Field rows: the name exactly as Framer shows it, then what it does */
@@ -180,6 +189,7 @@ code { font-family: var(--f-mono); font-size: .85em; }
   .steps li { grid-template-columns: 40px 1fr; padding: 16px 0; }
   .props div { grid-template-columns: 1fr; gap: 4px; padding: 12px 0; }
   .checks li { padding-left: 24px; }
+  .uirow { grid-template-columns: 1fr 1fr; gap: 10px; }
   .foot { padding: 56px var(--gutter) 28px; }
   .foot__row { flex-direction: column; margin-top: 48px; }
 }
