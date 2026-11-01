@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Editing the Thalcon site</title>
+  <meta name="description" content="How to change the stats, logos, jobs, globe states, videos and photos on the Thalcon site in Framer.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:wght@400;500;600&family=Poppins:wght@600&family=Sometype+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="guide.css">
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="hdr__logo" href="#top" aria-label="Thalcon, back to top">
+      <svg viewBox="0 0 340 25" fill="currentColor" aria-hidden="true">
+        <path d="M44.6154 0.00673265V4.55127H30.7692V22.7294H13.8462V4.55127H0V0.00673265H44.6154Z"/>
+        <path d="M192.308 18.1849V22.7294H147.692V0.00673265H164.615V18.1849H192.308Z"/>
+        <path d="M93.8462 0.00673265V22.7294H89.2308V15.1518H53.8462V22.7294H49.2308V0.00673265H53.8462V4.55127H89.2308V0.00673265H93.8462Z"/>
+        <path d="M196.923 22.7294L197.012 12.1255H196.923V0.00673265H241.538V4.55127H212.308V18.1849H241.538V22.7294H221.86H196.923Z"/>
+        <path d="M261.538 0.00336632L246.154 0V22.7227H261.538L275.385 22.726H290.769V0.00336632H261.538ZM261.538 18.1781V4.5479H275.385V18.1815L261.538 18.1781Z"/>
+        <path d="M260 0V0.00336632L244.615 0H260Z"/>
+        <path d="M340 0.00673265V22.7294H315.638L300 12.0077V22.7294H295.385V0.00673265H306.745L335.385 20.3629V0.00673265H340Z"/>
+        <path d="M143.33 22.726H120.253L115.829 19.693H98.4615V15.1485H109.2L106.995 13.637L98.4615 7.78631V0.00336632H111.361L143.33 22.726Z"/>
+      </svg>
+    </a>
+    <nav class="hdr__nav label" aria-label="Guide">
+      <a href="#start">Start</a>
+      <a href="#fields">Fields</a>
+      <a href="#lists">Lists</a>
+      <a href="#media">Images and video</a>
+      <a href="#publish">Publish</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="wrap intro">
+    <p class="label intro__kicker">Thalcon · client guide</p>
+    <h1 class="intro__title">Editing the site in Framer</h1>
+    <div class="intro__grid">
+      <p class="intro__lede">The whole site is one Framer component called Thalcon site. You change it from a list of fields in Framer's right-hand panel: the stats, the logos, the jobs, the states on the globe, the videos and the photos. This page shows each field and where it lands on the site.</p>
+    </div>
+  </section>
+
+  <!-- 01 -->
+  <section class="sec dark" id="start">
+    <div class="wrap">
+      <span class="axis" aria-hidden="true"></span>
+      <div class="sec__meta label" style="padding-top: calc(90 * var(--u));"><span>Before you start</span><span>01</span></div>
+      <div class="rule"></div>
+      <div class="split">
+        <div class="split__l">
+          <h2 class="sec__title">Find the fields</h2>
+        </div>
+        <div class="split__r">
+          <ol class="steps">
+            <li><span>Open the Thalcon project in Framer and go to the <strong>Home</strong> page.</span></li>
+            <li><span>In the Layers panel on the left, under <strong>Desktop</strong>, click the layer called <strong>Thalcon site</strong>.</span></li>
+            <li><span>Its fields appear in the panel on the right. Change what you need there.</span></li>
+            <li><span>Press <strong>Preview</strong> (the play button, top right) to see the result with the animations.</span></li>
+            <li><span>When it looks right, press <strong>Publish</strong>. Nothing goes live before that.</span></li>
+          </ol>
+          <p class="note" style="margin-top: calc(40 * var(--u));">Always edit with the Desktop breakpoint selected. Tablet and Phone copy Desktop on their own. If you change a field while Tablet or Phone is selected, that change only applies there, and that breakpoint stops following Desktop for that field. To undo it, reset the field in the right-hand panel.</p>
+          <p class="note">The canvas shows a still version of the page, with every animation finished, so you can read and click everything. Preview and the published site run the real scroll animations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 -->
+  <section class="sec" id="fields">
+    <div class="wrap">
+      <span class="axis" aria-hidden="true"></span>
+      <div class="sec__meta label" style="padding-top: calc(90 * var(--u));"><span>The fields</span><span>02</span></div>
+      <div class="rule"></div>
+      <div class="split">
+        <div class="split__l">
+          <h2 class="sec__title">In panel order</h2>
+        </div>
+        <div class="split__r">
+          <table class="glance">
+            <thead><tr><th>Field</th><th>On the site</th></tr></thead>
+            <tbody>
+              <tr><td><a href="#f-stats">Stats</a></td><td>The figures in Sustainability</td></tr>
+              <tr><td><a href="#f-stats-photo">Stats photo</a></td><td>The photo under the Sustainability title</td></tr>
+              <tr><td><a href="#f-certifications">Certifications</a></td><td>The names and logos in Innovation</td></tr>
+              <tr><td><a href="#f-partners">Partners</a></td><td>The logos in Strategic Relationships</td></tr>
+              <tr><td><a href="#f-jobs">Jobs</a></td><td>The list under Work with us</td></tr>
+              <tr><td><a href="#f-states">Globe states</a></td><td>The labels around the globe</td></tr>
+              <tr><td><a href="#f-hero">Hero video, Hero video poster</a></td><td>The video at the top of the page</td></tr>
+              <tr><td><a href="#f-site">Site video, Site video poster</a></td><td>The aerial video with "~1 acre"</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <article class="field" id="f-stats">
+      <div class="wrap">
+        <span class="axis" aria-hidden="true"></span>
+        <div class="field__head"><h3 class="field__name">Stats</h3><span class="label">List · up to 8</span></div>
+        <div class="split">
+          <div class="split__l">
+            <p>Each stat is one column in Sustainability. As visitors scroll, the columns slide left one at a time and the one on the left turns black.</p>
+            <dl class="props">
+              <div><dt>Value</dt><dd>The big figure, like <code>186.9</code> or <code>−31.3%</code>.</dd></div>
+              <div><dt>Second line</dt><dd>Optional. A smaller part that goes on its own line under the value, like the unit <code>kg CO₂e/yd³</code>. Leave it empty if the value stands alone.</dd></div>
+              <div><dt>Caption</dt><dd>The sentence under the line. Keep it to about 10 words, or it runs to four lines.</dd></div>
+            </dl>
+            <p class="note">The scroll length stays the same however many stats there are, so each extra stat passes a little faster. Three to five reads best.</p>
+          </div>
+          <div class="split__r">
+            <figure>
+              <img class="shot" src="img/stats.jpg" width="1440" height="900" alt="The Sustainability section: the title on the left, the stat 186.9 kg CO2e per cubic yard top right, its caption below the line" loading="lazy">
+              <figcaption class="label shot__cap">Sustainability · value top right, caption under the line</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="field" id="f-stats-photo">
+      <div class="wrap">
+        <span class="axis" aria-hidden="true"></span>
+        <div class="field__head"><h3 class="field__name">Stats photo</h3><span class="label">Image</span></div>
+        <div class="split">
+          <div class="split__l">
+            <p>The photo in the bottom-left quarter of Sustainability. It moves slowly upward as the stats slide, so use a photo that still works with its top and bottom cropped. Aerial shots and textures suit it.</p>
+            <p>Use a JPG at least 1600 px wide.</p>
+          </div>
+          <div class="split__r">
+            <figure>
+              <img class="shot" src="img/stats.jpg" width="1440" height="900" alt="The same Sustainability section, with the aerial photo of tire tracks in the bottom-left quarter" loading="lazy">
+              <figcaption class="label shot__cap">The photo fills the bottom-left quarter</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="field" id="f-certifications">
+      <div class="wrap">
+        <span class="axis" aria-hidden="true"></span>
+        <div class="field__head"><h3 class="field__name">Certifications</h3><span class="label">List</span></div>
+        <div class="split">
+          <div class="split__l">
+            <p>The associations in Innovation. The names step up the right side one at a time. The active name sits just under the line, with its logo level with it on the left.</p>
+            <dl class="props">
+              <div><dt>Name</dt><dd>Press <kbd>Enter</kbd> where you want the line to break, like after "American". Keep it to two lines.</dd></div>
+              <div><dt>Logo</dt><dd>The logo shown next to the name. See <a href="#media">images and video</a> for the format.</dd></div>
+              <div><dt>Note under logo</dt><dd>Optional. A small label under the logo, like <code>South Florida</code>. Useful when two entries share a logo.</dd></div>
+            </dl>
+          </div>
+          <div class="split__r">
+            <figure>
+              <img class="shot" src="img/innovation.jpg" width="1440" height="900" alt="The Innovation section: the title top left, the NRMCA logo bottom left, level with the active name National Ready Mixed Concrete Association on the right" loading="lazy">
+              <figcaption class="label shot__cap">Innovation · each name lines up with its logo</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="field" id="f-partners">
+      <div class="wrap">
+        <span class="axis" aria-hidden="true"></span>
+        <div class="field__head"><h3 class="field__name">Partners</h3><span class="label">List</span></div>
+        <div class="split">
+          <div class="split__l">
+            <p>The logos in Strategic Relationships, four to a row. A fifth logo starts a second row.</p>
+            <dl class="props">
+              <div><dt>Name</dt><dd>The company name. Visitors don't see it, but screen readers and search engines use it.</dd></div>
+              <div><dt>Logo</dt><dd>The logo file.</dd></div>
+              <div><dt>Logo width</dt><dd>How wide the logo shows, in design units. The full page is 1512 units wide and each logo's box is 340. The current logos sit between 144 and 294. Adjust it until the new logo looks as heavy as the others.</dd></div>
+              <div><dt>Logo height</dt><dd>Set it to the height that keeps the logo's proportions at that width. The page only uses it to hold the space while the logo loads.</dd></div>
+            </dl>
+          </div>
+          <div class="split__r">
+            <figure>
+              <img class="shot" src="img/partners.jpg" width="1440" height="900" alt="The Strategic Relationships section: the title and a short paragraph, then four partner logos in a row" loading="lazy">
+              <figcaption class="label shot__cap">Strategic Relationships · four logos per row</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="field" id="f-jobs">
+      <div class="wrap">
+        <span class="axis" aria-hidden="true"></span>
+        <div class="field__head"><h3 class="field__name">Jobs</h3><span class="label">List</span></div>
+        <div class="split">
+          <div class="split__l">
+            <p>The open positions under Work with us. Visitors click a row to open the job.</p>
+            <dl class="props">
+              <div><dt>Title</dt><dd>The role, in large type.</dd></div>
+              <div><dt>Subtitle</dt><dd>The small label on the left of the row, like the team or the contract type.</dd></div>
+              <div><dt>Location</dt><dd>The small label in the middle of the row.</dd></div>
+              <div><dt>Description</dt><dd>The text visitors see when they open the job.</dd></div>
+              <div><dt>Apply email</dt><dd>Where applications go. The "Send your CV" button opens an email to this address, with the job title in the subject.</dd></div>
+            </dl>
+            <p class="note">To close a position, remove it from the list. To pause it for a while, remove it and add it back later.</p>
+          </div>
+          <div class="split__r">
+            <figure>
+              <img class="shot" src="img/jobs.jpg" width="1440" height="900" alt="The jobs list on black: Mechanic, Sales Marketing, Procurement and Product Development, each with a subtitle, a location and an arrow" loading="lazy">
+              <figcaption class="label shot__cap">Jobs · title, then subtitle and location</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="field" id="f-states">
+      <div class="wrap">
+        <span class="axis" aria-hidden="true"></span>
+        <div class="field__head"><h3 class="field__name">Globe states</h3><span class="label">List · up to 16</span></div>
+        <div class="split">
+          <div class="split__l">
+            <p>The labels around the globe in Working Nation Wide. Each entry is one node, linked to the centre. Add or remove an entry and the nodes spread out evenly again.</p>
+            <p>Short names read best, like <code>Texas</code> or <code>Florida</code>. Six to ten keeps the globe readable.</p>
+          </div>
+          <div class="split__r">
+            <figure>
+              <img class="shot" src="img/globe.jpg" width="1440" height="900" alt="The globe between the words Working and Nation Wide, with square nodes labelled State linked to the centre" loading="lazy">
+              <figcaption class="label shot__cap">Working Nation Wide · one label per node</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="field" id="f-hero">
+      <div class="wrap">
+        <span class="axis" aria-hidden="true"></span>
+        <div class="field__head"><h3 class="field__name">Hero video</h3><span class="label">Video + poster</span></div>
+        <div class="split">
+          <div class="split__l">
+            <dl class="props">
+              <div><dt>Hero video</dt><dd>The video under the logo at the top of the page. It grows to full screen as visitors scroll. It plays muted, so it doesn't need sound.</dd></div>
+              <div><dt>Hero video poster</dt><dd>The image shown until the video loads. Use the video's first frame, so the switch is invisible.</dd></div>
+            </dl>
+          </div>
+          <div class="split__r">
+            <figure>
+              <img class="shot" src="img/hero.jpg" width="1440" height="900" alt="The top of the page: the Thalcon logo and tagline, with the aerial hero video below" loading="lazy">
+              <figcaption class="label shot__cap">The opening frame · video below the logo</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="field" id="f-site">
+      <div class="wrap">
+        <span class="axis" aria-hidden="true"></span>
+        <div class="field__head"><h3 class="field__name">Site video</h3><span class="label">Video + poster</span></div>
+        <div class="split">
+          <div class="split__l">
+            <dl class="props">
+              <div><dt>Site video</dt><dd>The aerial video before Sustainability. It doesn't play on its own. It moves forward and back with the scroll, and "~1 acre" appears over its last frame.</dd></div>
+              <div><dt>Site video poster</dt><dd>The image shown until the video loads. Use its first frame.</dd></div>
+            </dl>
+            <p class="note">A video that follows the scroll needs a special export to move smoothly. Send new footage to Simon and he'll prepare the file.</p>
+          </div>
+          <div class="split__r">
+            <figure>
+              <img class="shot" src="img/site-video.jpg" width="1440" height="900" alt="A full-screen aerial video of a large site with stockpiles, with ~1 acre for the full operation, stockpiles included written over it" loading="lazy">
+              <figcaption class="label shot__cap">The site video · "~1 acre" over the last frame</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- 03 -->
+  <section class="sec" id="lists">
+    <div class="wrap">
+      <span class="axis" aria-hidden="true"></span>
+      <div class="rule" style="margin-top: calc(90 * var(--u));"></div>
+      <div class="sec__meta label" style="padding-top: calc(18 * var(--u));"><span>Lists</span><span>03</span></div>
+      <div class="rule"></div>
+      <div class="split">
+        <div class="split__l">
+          <h2 class="sec__title">Add, remove, reorder</h2>
+        </div>
+        <div class="split__r">
+          <p class="lead">Stats, Certifications, Partners, Jobs and Globe states are lists. Each item in the panel is one entry on the page.</p>
+          <ul class="checks" style="margin-top: calc(32 * var(--u));">
+            <li>To add an entry, click the plus next to the list's name, then fill in its fields.</li>
+            <li>To edit an entry, click it to open its fields.</li>
+            <li>To change the order, drag the entry up or down. The page follows the order of the panel.</li>
+            <li>To remove an entry, hover it and use its remove button.</li>
+          </ul>
+          <p class="note" style="margin-top: calc(32 * var(--u));">If you clear the stats photo, a poster or a video, the page goes back to the original file. A new list entry needs its own logo, though, so fill that field before you publish.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 -->
+  <section class="sec" id="media">
+    <div class="wrap">
+      <span class="axis" aria-hidden="true"></span>
+      <div class="rule" style="margin-top: calc(90 * var(--u));"></div>
+      <div class="sec__meta label" style="padding-top: calc(18 * var(--u));"><span>Images and video</span><span>04</span></div>
+      <div class="rule"></div>
+      <div class="split">
+        <div class="split__l">
+          <h2 class="sec__title">File formats</h2>
+        </div>
+        <div class="split__r">
+          <p class="lead">Click an image or video field to upload a new file in its place.</p>
+          <dl class="props" style="margin-top: calc(32 * var(--u));">
+            <div><dt>Logos</dt><dd>PNG with a transparent background, trimmed close to the logo. Extra empty space around it makes it look smaller than the others. The site shows every logo in greyscale, so a colour file is fine.</dd></div>
+            <div><dt>Photos</dt><dd>JPG, at least 1600 px wide.</dd></div>
+            <div><dt>Videos</dt><dd>MP4, under about 15 MB, no sound needed. Bigger files take longer to start on phones.</dd></div>
+            <div><dt>Posters</dt><dd>JPG of the video's first frame, the same size as the video.</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 -->
+  <section class="sec" id="publish">
+    <div class="wrap">
+      <span class="axis" aria-hidden="true"></span>
+      <div class="rule" style="margin-top: calc(90 * var(--u));"></div>
+      <div class="sec__meta label" style="padding-top: calc(18 * var(--u));"><span>Publish</span><span>05</span></div>
+      <div class="rule"></div>
+      <div class="split">
+        <div class="split__l">
+          <h2 class="sec__title">Check, then publish</h2>
+        </div>
+        <div class="split__r">
+          <ul class="checks">
+            <li>Press Preview and scroll through the section you changed.</li>
+            <li>Check it at phone width too, by narrowing the Preview window.</li>
+            <li>Press Publish to put the changes live.</li>
+            <li>Changed your mind before publishing? <kbd>Cmd</kbd> + <kbd>Z</kbd> undoes the last edits.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 -->
+  <section class="sec" id="limits">
+    <div class="wrap">
+      <span class="axis" aria-hidden="true"></span>
+      <div class="rule" style="margin-top: calc(90 * var(--u));"></div>
+      <div class="sec__meta label" style="padding-top: calc(18 * var(--u));"><span>Everything else</span><span>06</span></div>
+      <div class="rule"></div>
+      <div class="split">
+        <div class="split__l">
+          <h2 class="sec__title">What stays in code</h2>
+        </div>
+        <div class="split__r" style="padding-bottom: calc(110 * var(--u));">
+          <p class="lead">Headings, paragraphs, the order of the sections, the animations, the colours and the fonts live in the site's code, not in these fields.</p>
+          <p>For those, write to Simon. He changes the code and updates the component, and everything you've set in the fields stays as it is.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap" style="width: auto;">
+    <p class="foot__title">Questions?<br>Ask Simon.</p>
+    <div class="foot__row label">
+      <span class="foot__logo" aria-hidden="true">
+        <svg viewBox="0 0 340 25" fill="currentColor">
+          <path d="M44.6154 0.00673265V4.55127H30.7692V22.7294H13.8462V4.55127H0V0.00673265H44.6154Z"/>
+          <path d="M192.308 18.1849V22.7294H147.692V0.00673265H164.615V18.1849H192.308Z"/>
+          <path d="M93.8462 0.00673265V22.7294H89.2308V15.1518H53.8462V22.7294H49.2308V0.00673265H53.8462V4.55127H89.2308V0.00673265H93.8462Z"/>
+          <path d="M196.923 22.7294L197.012 12.1255H196.923V0.00673265H241.538V4.55127H212.308V18.1849H241.538V22.7294H221.86H196.923Z"/>
+          <path d="M261.538 0.00336632L246.154 0V22.7227H261.538L275.385 22.726H290.769V0.00336632H261.538ZM261.538 18.1781V4.5479H275.385V18.1815L261.538 18.1781Z"/>
+          <path d="M260 0V0.00336632L244.615 0H260Z"/>
+          <path d="M340 0.00673265V22.7294H315.638L300 12.0077V22.7294H295.385V0.00673265H306.745L335.385 20.3629V0.00673265H340Z"/>
+          <path d="M143.33 22.726H120.253L115.829 19.693H98.4615V15.1485H109.2L106.995 13.637L98.4615 7.78631V0.00336632H111.361L143.33 22.726Z"/>
+        </svg>
+      </span>
+      <span>Editing guide · November 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Header theme: dark while a dark section sits under it
+  (() => {
+    const hdr = document.querySelector('.hdr');
+    const dark = [...document.querySelectorAll('.dark, .foot')];
+    const update = () => {
+      const y = hdr.offsetHeight / 2;
+      hdr.classList.toggle('is-dark', dark.some(el => { const r = el.getBoundingClientRect(); return r.top <= y && r.bottom > y; }));
+    };
+    addEventListener('scroll', update, { passive: true });
+    addEventListener('resize', update);
+    update();
+  })();
+</script>
+</body>
+</html>
